@@ -1,0 +1,37 @@
+# Внутренний размер комнаты. По умолчанию внутри остается пространство 3x3x3.
+trap:
+  width: 3
+  height: 3
+  length: 3
+  duration-seconds: 10
+  max-stairs: 2
+
+  # Блок света внутри комнаты. 15 - максимальный свет.
+  light-level: 15
+
+  # Блоки оболочки выбираются случайно для каждой позиции.
+  wall-blocks:
+    - DEEPSLATE
+    - POLISHED_DEEPSLATE
+
+  # Ступеньки ставятся случайно в оболочке, максимум max-stairs на одну трапку.
+  stair-block: POLISHED_DEEPSLATE_STAIRS
+
+item:
+  material: ECHO_SHARD
+  name: '&8&lТрапка'
+  lore:
+    - '&7ПКМ, чтобы создать временную комнату.'
+    - '&7Исчезает через &f10 секунд&7.'
+
+messages:
+  prefix: '&8[&bTrapka&8] '
+  no-permission: '&cНет прав.'
+  player-not-found: '&cИгрок не найден.'
+  invalid-amount: '&cКоличество должно быть числом от 1 до 64.'
+  give: '&aВыдано &f%amount% &aтрапок игроку &f%player%&a.'
+  received: '&aВы получили &f%amount% &aтрапок.'
+  reloaded: '&aКонфиг перезагружен.'
+  used: '&aТрапка поставлена на &f%duration% &aсек.'
+  already-inside: '&cТы уже находишься в активной трапке.'
+  active-near: '&cЗдесь уже есть активная трапка.'

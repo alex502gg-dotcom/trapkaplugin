@@ -1,0 +1,19 @@
+name: TrapkaPlugin
+version: '1.0.0'
+main: ru.trapka.plugin.TrapkaPlugin
+api-version: '1.21'
+author: Codex
+description: Trap item with temporary deepslate room.
+
+commands:
+  trapka:
+    description: Main Trapka command.
+    usage: /trapka help
+
+permissions:
+  trapka.admin:
+    description: Allows using /trapka commands.
+    default: op
+  trapka.use:
+    description: Allows using trapka item.
+    default: true
